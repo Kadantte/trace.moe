@@ -40,13 +40,13 @@ Client-side:
 Server-side:
 
 - [trace.moe-api](https://github.com/soruly/trace.moe-api) - API server for image search and database updates
-- [trace.moe-media](https://github.com/soruly/trace.moe-media) - media server for video storage and scene preview generation, now integrated into trace.moe-api
-- [trace.moe-worker](https://github.com/soruly/trace.moe-worker) - includes hasher, loader and watcher, now integrated into trace.moe-api
-- [LireSolr](https://github.com/soruly/liresolr) - image analysis and search plugin for Solr, now integrated into trace.moe-api
+- ~~[trace.moe-media](https://github.com/soruly/trace.moe-media) - media server for video storage and scene preview generation.~~ Integrated into trace.moe-api
+- ~~[trace.moe-worker](https://github.com/soruly/trace.moe-worker) - includes hasher, loader and watcher.~~ Integrated into trace.moe-api
+- ~~[LireSolr](https://github.com/soruly/liresolr) - image analysis and search plugin for Solr.~~ Integrated into trace.moe-api
 
 Others:
 
-- [anilist-crawler](https://github.com/soruly/anilist-crawler) - getting anilist info and store in mariaDB, now integrated into trace.moe-api
+- ~~[anilist-crawler](https://github.com/soruly/anilist-crawler) - getting anilist info and store in database.~~ Integrated into trace.moe-api
 - [slides](https://github.com/soruly/slides) - past presentation slides on the project
 
 ## Hosting your own trace.moe system
@@ -88,7 +88,7 @@ You can also increase `MAX_WORKER` to make hashing faster.
 
 ### Using pre-hashed data
 
-> Loading all 100,000+ files to Milvus requires about 192GB RAM
+> Loading all 100,000+ files to memory requires about 160GB RAM
 
 1. Download the pre-hashed data here: [trace.moe database dump 2025-10](https://nyaa.si/view/2029214)
 
